@@ -158,10 +158,6 @@ plot_imputed_values(imputed_data,table_cat,x,y,s,t,feature)
 
 By selecting a specific feature from the database, *calculate_imputed_values()* provides a vector with data imputed. The function conserves the original experimental data and use multiprocessing. *plot_imputed_values()* provides a visualization in the TMAP layout. 
 
-<p align="center">
-  <img width="800"  src="Output/TMAP_ImputationDE.png">
-</p>
-
 ## Suggestions and contributions 
 Please use github issue tracker to report coding related issues or contact me directly at dalodriguez@gmail.com
 
