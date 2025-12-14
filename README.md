@@ -129,7 +129,7 @@ Using a defined node index in the TMAP layout, *get_closest_connected_nodes()* c
 *plot_knn()* allows to obtain a visual representation of the output:
 
 <p align="center">
-  <img width="1000" height="600"  src="Output/kNNPlot.png">
+  <img width="800" height="600"  src="Output/kNNPlot.png">
 </p>
 
 #### k-NN Molecular Similarity & Decay Curve 
@@ -159,7 +159,7 @@ plot_imputed_values(imputed_data,table_cat,x,y,s,t,feature)
 By selecting a specific feature from the database, *calculate_imputed_values()* provides a vector with data imputed. The function conserves the original experimental data and use multiprocessing. *plot_imputed_values()* provides a visualization in the TMAP layout. 
 
 <p align="center">
-  <img width="900"  src="Output/TMAP_ImputationDE.png">
+  <img width="800"  src="Output/TMAP_ImputationDE.png">
 </p>
 
 ## Suggestions and contributions 
