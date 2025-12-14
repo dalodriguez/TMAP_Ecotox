@@ -1,8 +1,6 @@
 # TMAP Analysis and Visualization
 
-*This repository contains the python scripts associated to the study "A chemical space model for the exploration of eco-toxicological data" (Lopez-Rodriguez et al., 2025 BioRXiv).
-
-Using a predefined TMAP layout (Reymond & Probst, 2020), the functions in this repository allow users to:
+This repository contains the python scripts associated to the study "*A chemical space model for the exploration of eco-toxicological data*" (Lopez-Rodriguez et al., 2025 BioRXiv). Using a predefined TMAP layout (Reymond & Probst, 2020), the functions in this repository allow users to:
 
 - Retrieve and visualize the k-nearest neighbors (k-NN) in the chemical space.
 - Compute and visualize the Tanimoto similarity decay among k-NN.
@@ -27,29 +25,10 @@ The notebook relies mainly on the following Python (3.7.6) libraries:
 
 All dependencies are included in environment.yml.
 
-# Folder Structure
-
-.
-├── Data
-│   ├── s.csv
-│   ├── t.csv
-│   ├── x.csv
-│   ├── y.csv
-│   ├── morgan_fps.pkl [*To download from Zenodo*]
-│   ├── table_cat.csv [*To download from Zenodo*]
-│   └── table_num.pkl [*To download from Zenodo*]
-├── Notebook
-│   └── TMAP_Notebook.ipynb
-├── Output
-│   └── kNNPlot.png
-├── Scripts
-│   └── Functions.py
-├── README.md
-└── Environment.yml
 
 # Data Inputs
 
-- x,y,s,t are TMAP node coordinates and edge lists 
+- x,y,s,t: TMAP node coordinates and edge lists 
 - morgan_fps.pkl: precomputed Morgan fingerprints
 - table_cat.csv: Categorical metadata for molecules.
 - table_num.pkl: Numerical feature matrix
@@ -150,7 +129,7 @@ Using a defined node index in the TMAP layout, *get_closest_connected_nodes()* c
 *plot_knn()* allows to obtain a visual representation of the output:
 
 <p align="center">
-  <img width="1100"  src="Output/kNNPlot.png">
+  <img width="1000" height="600"  src="Output/kNNPlot.png">
 </p>
 
 #### k-NN Molecular Similarity & Decay Curve 
@@ -180,7 +159,7 @@ plot_imputed_values(imputed_data,table_cat,x,y,s,t,feature)
 By selecting a specific feature from the database, *calculate_imputed_values()* provides a vector with data imputed. The function conserves the original experimental data and use multiprocessing. *plot_imputed_values()* provides a visualization in the TMAP layout. 
 
 <p align="center">
-  <img width="1100"  src="Output/TMAP_ImputationDE.png">
+  <img width="900"  src="Output/TMAP_ImputationDE.png">
 </p>
 
 ## Suggestions and contributions 
